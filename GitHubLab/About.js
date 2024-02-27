@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom';
-import { Linking } from 'react-native';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
