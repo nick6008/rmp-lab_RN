@@ -15,6 +15,6 @@ npm install -g expo-cli
 	Возможно понадобится: 
 	c. expo install react-native-web react-dom @expo/metro-runtime
    d. IP под QR кодом указать в браузере
-
-5) в дальнейшем изменения будут в папке lab. 
+5) Скопировать содержимое GitHubLab в свой проект
+6) в дальнейшем изменения будут в папке lab. 
 
