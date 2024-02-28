@@ -1,6 +1,6 @@
 
 1)Из cmd admin установить глобально expo-cli:
-npm install -g expo-cli
+    npm install -g expo-cli
 2) Создать проект
    Перейти в папку для проектов:
      a. Cd ИМЯ_ПАПКИ_ВСЕХ_ПРОЕКТОВ
