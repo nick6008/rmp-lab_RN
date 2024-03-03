@@ -1,15 +1,13 @@
 import React from 'react';
 import {View, Text, Image, ScrollView, TextInput} from 'react-native';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
-import Home from './Home';
 import Navi from './Navi';
 
 const App = () => {
   return (
     <ScrollView>
-      <Text>https://reactnativedev.ru/rn</Text>
+      <Text>==1==</Text>
       <Navi />
-
+      <Text>==2==</Text>
       <View>
         
         <Image
