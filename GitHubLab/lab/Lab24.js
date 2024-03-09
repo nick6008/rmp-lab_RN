@@ -1,19 +1,43 @@
 import React from 'react';
-import { View } from 'react-native-web';
+import { Text, View } from 'react-native'
+import { NavigationContainer } from '@react-navigation/native'
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+/* https://snack.expo.dev/ */
 
-const Lab24 = () => {
+const Favorites = () => {
   return(
-    <View>
-      <h1>Lab24 React Navigation.</h1>
-      <h3>Эта лаба не заработала по причине:</h3>
-      <p>
-      Web Bundling failed 2272ms (C:\android\L3_2\node_modules\expo\AppEntry.js)<br/>
-      Unable to resolve "react-navigation-tabs" from "lab\Labtest_2.js"
-      </p>
-    <h3>Какие предложения?<br/>Текст лабы в файле Labtest_2.js</h3>
+    <View style={{flex:1, justifyContent:'center', alignItems:'center'}}>
+      <Text>Favorites</Text>
     </View>
-  )
-  ;
+  );
 };
 
-export default Lab24;
+const HomeScreen = () => {
+  return(
+    <View style={{flex:1, justifyContent:'center', alignItems:'center'}}>
+      <Text>Домой</Text>
+    </View>
+  );
+};
+
+const MyNotes = () => {
+  return(
+    <View style={{flex:1, justifyContent:'center', alignItems:'center'}}>
+      <Text>Моя вкладка</Text>
+    </View>
+  );
+};
+
+const Tab = createBottomTabNavigator()
+
+export default function Lab25() {
+  return (
+    <NavigationContainer>
+      <Tab.Navigator>
+        <Tab.Screen name="Home" component={HomeScreen} />
+        <Tab.Screen name="Мои записи" component={MyNotes} />
+        <Tab.Screen name="Избранное" component={Favorites} />
+      </Tab.Navigator>
+    </NavigationContainer>
+  )
+}
