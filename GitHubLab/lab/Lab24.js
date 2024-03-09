@@ -2,7 +2,9 @@ import React from 'react';
 import { Text, View } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-/* https://snack.expo.dev/ */
+/* https://snack.expo.dev/ 
+React Navigation
+*/
 
 const Favorites = () => {
   return(
@@ -30,7 +32,7 @@ const MyNotes = () => {
 
 const Tab = createBottomTabNavigator()
 
-export default function Lab25() {
+export default function Lab24() {
   return (
     <NavigationContainer>
       <Tab.Navigator>
