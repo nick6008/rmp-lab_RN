@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import {View, StyleSheet, Text, Button, useWindowDimensions} from 'react-native';
 import { Link } from 'react-router-dom';
-
+/* Хуки 
+  HookDimens (useWindowDimensions) : изменение рамера окна
+  HookState (useState) : счетчик
+*/
 const HookDimens = () => {
   const {height, width, scale, fontScale} = useWindowDimensions();
   return (
