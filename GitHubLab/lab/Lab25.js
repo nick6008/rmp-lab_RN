@@ -1,6 +1,7 @@
+import { Link } from 'expo-router';
 import React, { useState } from 'react';
-import {View, StyleSheet, Text, Button, useWindowDimensions} from 'react-native';
-import { Link } from 'react-router-dom';
+import { Button, StyleSheet, Text, useWindowDimensions, View } from 'react-native';
+
 /* Хуки 
   HookDimens (useWindowDimensions) : изменение рамера окна
   HookState (useState) : счетчик
@@ -11,7 +12,7 @@ const HookDimens = () => {
     <View style={styles.container}>
       <Text style={styles.header}>Window Dimension Data</Text>
       <Text>Хук: useWindowDimensions</Text>
-      <Link to="https://reactnativedev.ru/rn/usewindowdimensions/">
+      <Link href="https://reactnativedev.ru/rn/usewindowdimensions/">
           https://reactnativedev.ru/rn//usewindowdimensions/</Link>
       <Text>Height: {height}</Text>
       <Text>Width: {width}</Text>
@@ -27,7 +28,7 @@ const HookState = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Хук: useState</Text>
-      <Link to="https://www.jscamp.app/ru/docs/reactnative10">
+      <Link href="https://www.jscamp.app/ru/docs/reactnative10">
         https://www.jscamp.app/ru/docs/reactnative10</Link>
 
       <Text>Вы кликнули {count} раз</Text>
@@ -41,6 +42,7 @@ const Lab25 = () => {
     <View>
       <h1>Lab25 Хуки React.</h1>
       <HookState />
+      <View style={{ height: 20 }} />
       <HookDimens />
     </View>
   )
