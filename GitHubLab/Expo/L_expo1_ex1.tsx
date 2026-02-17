@@ -13,7 +13,7 @@ return (
           Группа, Фамилия
         </Text>
         <Text style={styles.description}>
-            Текстовый компонент.
+            Приложение на React Native с использованием Expo
         </Text>
     </View>
 </View>
