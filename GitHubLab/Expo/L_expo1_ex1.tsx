@@ -1,5 +1,5 @@
 import { Image, StyleSheet, Text, View } from 'react-native';
-export default function CardWithImage() {
+export default function AppExpo1() {
 return (
 <View style={styles.card}>
     {/* Компонент Image для отображения картинки. */}
