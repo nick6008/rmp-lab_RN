@@ -7,7 +7,6 @@ import {
   TouchableOpacity,
   View
 } from 'react-native';
-//  find ~/prg/kbp/SQLite / -name "*.db"
 
 // Определение интерфейса для данных
 interface Todo {
@@ -23,7 +22,7 @@ export default function App() {
 
   // 1. Инициализация БД
   useEffect(() => {
-    async function setup() {  /* добавил имя бд my.db */
+    async function setup() {  /* здесь может быть имя, сейчас временная бд */
       const database = await SQLite.openDatabaseAsync(' ');
       
       // Создание таблицы, если она не существует
